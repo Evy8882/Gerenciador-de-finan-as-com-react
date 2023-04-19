@@ -1,0 +1,98 @@
+.header{
+  background-color: rgb(107, 51, 197);
+  padding: 35px 0px;
+  width: 100vw;
+  height: 165px;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.185);
+}
+.header h1{
+  color: white;
+  text-align: center;
+}
+.description{
+  font-size: 15pt;
+  color: #e0e0e0;
+  text-align: center;
+}
+.Painel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .Painel{
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.info-lucro,
+.info-perda,
+.info-atual{
+  background-color: white;
+  width: 25%;
+  height: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
+  transform: translateY(-20px);
+  box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.342);
+  border-radius: 6px;
+  min-width: 200px;
+  padding: 10px;
+}
+.info-lucro{
+  color: rgb(0, 150, 0);
+}
+.info-perda{
+  color: rgb(150, 0, 0);
+}
+.info-atual{
+  color: rgb(0, 0, 150);
+}
+.info-content{
+  font-size: 2.8em;
+}
+.main-section{
+  background-color: white;
+  width: 80vw;
+  min-height: 300px;
+  margin: auto;
+  box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.342);
+  border-radius: 6px;
+  padding: 30px 5px;
+  justify-content: center;
+}
+.title-input,
+.value-input,
+.type-input,
+.submit-button{
+  width: 23%;
+  margin: 3px;
+}
+form{
+  width: 92%;
+  margin: auto;
+}
+table{
+  margin: auto;
+  width: 92%;
+}
+th,
+td{
+  width: 25%;
+  text-align: center;
+}
+.new-item{
+  background-color: rgb(240, 240, 240);
+}
+.Ganho{
+  color: rgb(0, 130, 0);
+}
+.Ganho::before{
+  content: "+";
+}
+.Perda{
+  color: rgb(170, 0, 0);
+}
+.Perda::before{
+  content: "-";
+}
